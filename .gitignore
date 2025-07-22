@@ -1,0 +1,40 @@
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Arquivos de log
+*.log
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Configs de IDE
+.vscode/
+.idea/
+*.swp
+
+# Arquivos de ambiente
+.env
+
+# Banco de dados local
+*.sqlite3
+
+# Arquivos de build/testes
+dist/
+build/
+*.egg-info/
+coverage/
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# pip tools
+pip-wheel-metadata/
