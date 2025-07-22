@@ -1,15 +1,17 @@
-# db.py (revisado com config)
+# app/db.py
+
 from psycopg2 import connect
 from app.config import Config
 
 def get_connection():
+    config = Config()
     try:
         return connect(
-            user=Config.DB_USER,
-            password=Config.DB_PASSWORD,
-            host=Config.DB_HOST,
-            port=Config.DB_PORT,
-            dbname=Config.DB_NAME
+            user=config.DB_USER,
+            password=config.DB_PASSWORD,
+            host=config.DB_HOST,
+            port=config.DB_PORT,
+            dbname=config.DB_NAME
         )
     except Exception as e:
         print(f"Erro ao conectar: {e}")
